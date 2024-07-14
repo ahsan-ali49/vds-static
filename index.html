@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="mx-3">
+    <div class="mx-3 mt-3">
       <div class="w-full rounded-t-3xl py-5 px-9 hero-bg">
         <div class="flex flex-wrap items-center justify-between mx-auto">
           <a
@@ -140,11 +140,7 @@
               <span class="hero-span">
                 Your Free VIN Check is just a click away!
               </span>
-              <!-- <Formik
-              initialValues="{initialValues}"
-              validationSchema="{validationSchema}"
-              onSubmit="{onSubmit}"
-            > -->
+
               <form class="hidden md:block w-1/3 flex flex-col items-start">
                 <div class="flex flex-row gap-2 my-4 w-full">
                   <input
@@ -154,11 +150,7 @@
                     class="form-email"
                     placeholder="Email"
                   />
-                  <!-- <ErrorMessage
-                    name="email"
-                    component="div"
-                    class="text-red-500"
-                  /> -->
+
                   <input
                     type="text"
                     id="phone"
@@ -166,11 +158,6 @@
                     class="form-field text-gray-400 focus:text-gray-950 pl-3 focus:border-2 focus:border-cyan-500"
                     placeholder="Phone"
                   />
-                  <!-- <ErrorMessage
-                  name="phone"
-                  component="div"
-                  class="text-red-500"
-                /> -->
                 </div>
                 <div class="flex flex-row gap-2 mb-4 w-full">
                   <input
@@ -180,7 +167,6 @@
                     class="form-field text-gray-400 focus:text-gray-950 pl-3 focus:border-2 focus:border-cyan-500"
                     placeholder="VIN"
                   />
-                  <!-- <ErrorMessage name="vin" component="div" class="text-red-500" /> -->
 
                   <select
                     id="package"
@@ -192,11 +178,6 @@
                     <option value="P2">Package 2</option>
                     <option value="P3">Package</option>
                   </select>
-                  <!-- <ErrorMessage
-                  name="package"
-                  component="div"
-                  class="text-red-500"
-                /> -->
                 </div>
                 <button
                   type="submit"
@@ -205,10 +186,8 @@
                   Get your report now
                 </button>
               </form>
-              <!-- </Formik> -->
             </div>
             <div>
-              <!-- <img src="./assets/images/heroBackground.png" alt="" /> -->
               <img
                 src="./assets/images/heroCar.png"
                 alt="new audi a4l's"
@@ -328,7 +307,6 @@
         <div
           class="w-2/3 md:w-1/4 flex flex-row items-center justify-start md:justify-center gap-4 ps-0"
         >
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
           <div class="icon-bg">
             <img
               src="./assets/images/reportSectionIcon1.png"
@@ -338,23 +316,21 @@
             <img
               src="./assets/images/reportArrow1.png"
               alt="arrow"
-              class="hidden md:block absolute left-48 -mt-44 w-72"
+              class="hidden md:block absolute left-48 -ml-2 -mt-40 -mb-2 w-64"
             />
             <img
               src="./assets/images/reportArrow1.png"
               alt="arrow"
-              class="hidden md:block absolute left-1/3 ml-10 -mt-44 w-72"
+              class="hidden md:block absolute left-1/3 ml-12 -mt-40 -mb-2 w-64"
             />
           </div>
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+
           <p class="text-xl">Technical Data</p>
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
         </div>
 
         <div
           class="w-2/3 md:w-1/4 flex flex-row items-center justify-start md:justify-center gap-4 ps-0"
         >
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
           <div class="icon-bg">
             <img
               src="./assets/images/reportSectionIcon2.png"
@@ -362,24 +338,19 @@
               class="m-auto"
             />
           </div>
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+
           <p class="text-xl">Damage Check</p>
-          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
         </div>
 
         <div
-          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-around gap-3 md:gap-0 ps-0"
+          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-center gap-3 md:gap-3 ps-0"
         >
           <p class="text-xl">Ownership History</p>
+
           <img
             src="./assets/images/reportArrow2.png"
             alt="arrow"
-            class="hidden md:block absolute right-48 -mt-52 mb-0 w-80"
-          />
-          <img
-            src="./assets/images/reportArrow2.png"
-            alt="arrow"
-            class="hidden md:block absolute left-1/2 -ml-12 -mt-40 mb-3 w-64"
+            class="hidden md:block absolute left-1/2 -ml-8 -mt-40 mb-0 w-64"
           />
           <div class="icon-bg">
             <img
@@ -391,19 +362,15 @@
         </div>
 
         <div
-          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-around gap-3 md:gap-0 ps-0"
+          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-center gap-3 md:gap-3 ps-0"
         >
           <p class="text-xl">Odometer Check</p>
           <img
             src="./assets/images/reportArrow2.png"
             alt="arrow"
-            class="hidden md:block absolute right-48 -mt-52 mb-0 w-80"
+            class="hidden md:block absolute right-40 mr-3 -mt-52 mb-0 w-80"
           />
-          <img
-            src="./assets/images/reportArrow2.png"
-            alt="arrow"
-            class="hidden md:block absolute left-1/2 -ml-12 -mt-40 mb-3 w-64"
-          />
+
           <div class="icon-bg">
             <img
               src="./assets/images/reportSectionIcon4.png"
@@ -416,17 +383,16 @@
     </div>
 
     <!-- Pricing Section -->
-    <div class="w-full flex-col items-center mt-10 pt-20 hero-bg">
+    <div class="w-full flex-col items-center mt-10 pt-20 pb-8 hero-bg">
       <h2 class="text-2xl md:text-5xl pricing-heading">
         Pricing Options For Every Need
       </h2>
       <div
-        class="flex flex-col md:flex-row justify-center items-center gap-y-8 md:gap-y-0 py-12"
+        class="flex flex-col md:flex-row justify-center items-center gap-y-8 md:gap-y-0 pt-12 pb-8"
       >
         <div class="pricing-card-secondary z-10 flex flex-col justify-between">
           <div class="flex flex-row justify-between">
             <h5 class="card-title text-left">Basic</h5>
-            <!-- <img src={cardTitleIcon} alt="" /> -->
           </div>
 
           <div
@@ -510,9 +476,7 @@
               <span>No expiry</span>
             </li>
           </ul>
-          <button type="button" class="pc-btn-secondary text-white">
-            Get your report now
-          </button>
+          <button type="button" class="pc-btn">Get your report now</button>
         </div>
 
         <div class="pricing-card-secondary z-10 flex flex-col justify-between">
@@ -560,6 +524,9 @@
           </button>
         </div>
       </div>
+      <button class="border border-1 border-gray-950 contact-btn mx-auto">
+        Check your car
+      </button>
     </div>
 
     <!-- Contact Section -->
@@ -574,7 +541,9 @@
             Don't wait until it's too late. Check your VIN now and drive away
             with confidence.
           </p>
-          <button class="border border-1 border-gray-950 contact-div-btn">
+          <button
+            class="border border-1 border-gray-950 contact-div-btn flex flex-col justify-center items-center"
+          >
             Check your car
           </button>
         </div>
@@ -611,7 +580,7 @@
                 type="text"
                 id="name"
                 name="name"
-                class="focus:outline-gray-950 w-full md:w-1/2 name-form-field"
+                class="outline outline-gray-950 w-full md:w-1/2 name-form-field"
                 placeholder="Name"
               />
               <input
@@ -642,7 +611,7 @@
             </div>
             <button
               type="submit"
-              class="text-white mx-auto md:mx-0 contact-form-sbmtbtn"
+              class="text-white mx-auto md:mx-0 contact-form-sbmtbtn flex flex-col justify-center"
             >
               Submit
             </button>
@@ -664,11 +633,11 @@
               >
                 <img
                   src="./assets/images/navbarLogo.png"
-                  class="h-8"
+                  class="h-16"
                   alt="VDS logo"
                 />
                 <span
-                  class="self-center text-xl text-white whitespace-wrap w-32"
+                  class="self-center text-2xl text-white whitespace-wrap w-40"
                 >
                   Vehicle Digital Services
                 </span>
@@ -677,19 +646,19 @@
             <div class="w-1/2 flex flex-col gap-2">
               <h4 class="text-white text-2xl">Contact Us</h4>
               <div class="flex flex-row gap-x-4">
-                <img src="./assets/images/footer1.png" alt="" />
+                <img src="./assets/images/footer1.png" alt="" class="w-6 h-5" />
                 <span class="text-white">
                   info@vehicledigitalservices.com
                 </span>
               </div>
               <div class="flex flex-row gap-4">
-                <img src="./assets/images/footer2.png" alt="" class="w-6 h-6" />
+                <img src="./assets/images/footer2.png" alt="" class="w-6 h-5" />
                 <span class="text-white">(209) 555-0104</span>
               </div>
               <div></div>
             </div>
           </div>
-          <p class="hidden md:block footer-para mb-8">
+          <p class="hidden md:block footer-para mb-4">
             Empower your vehicle purchase with our comprehensive VIN check
             service. Uncover the truth, make informed decisions, and drive away
             with peace of mind.

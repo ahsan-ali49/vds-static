@@ -15,8 +15,14 @@ body::-webkit-scrollbar {
 }
 
 .contact-btn{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     box-sizing: border-box;
     padding: 10px 20px;
+    font-size: 18px;
 
     height: 42px;
 
@@ -47,7 +53,6 @@ body::-webkit-scrollbar {
     width: 1320px;
     height: 24px;
 
-    /* font-family: 'Inter Display'; */
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -426,7 +431,7 @@ body::-webkit-scrollbar {
     /* Have a question about our VIN check services? Need assistance with a report or looking for more information? Our friendly and knowledgeable customer support team is ready to help. */
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     letter-spacing: -0.02em;
 
@@ -436,11 +441,12 @@ body::-webkit-scrollbar {
 }
 
 .contact-div-btn{
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
 
     width: 185px;
     height: 54px;
-
+    font-size: 20px;
+    color: #000000 !important;
     background: #FFFFFF;
     box-shadow: 0px 0px 0px 1px #FFFFFF;
     border-radius: 10px;
@@ -512,6 +518,8 @@ body::-webkit-scrollbar {
 
     width: 99px;
     height: 44px;
+
+    font-size: 20px;
 
     background: linear-gradient(180deg, #101D4A 0%, #040A1F 100%);
     border: 1.5px solid #FFFFFF;
