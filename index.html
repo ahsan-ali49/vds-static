@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VDS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="mx-3">
+      <div class="w-full rounded-t-3xl py-5 px-9 hero-bg">
+        <div class="flex flex-wrap items-center justify-between mx-auto">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./assets/images/navbarLogo.png"
+              class="h-8"
+              alt="VDS logo"
+            />
+            <span class="self-center text-xl text-white whitespace-wrap w-32">
+              Vehicle Digital Services
+            </span>
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-700 border border-1 border-gray-950 h-10 contact-btn"
+            >
+              Contact Us
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block rounded md:p-0 text-white"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Countries
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Affiliate
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="w-full rounded-b-3xl py-5 ps-2 md:ps-9 hero-bg">
+        <div class="w-full flex flex-col gap-8">
+          <div class="flex flex-row items-center gap-2">
+            <span class="text-5xl span-text">203,244</span>
+            <!-- <span class="text-lg text-white whitespace-wrap w-20"> -->
+            <p
+              class="inline-block text-lg text-white leading-5 whitespace-wrap w-40"
+            >
+              Successful checks this year
+            </p>
+          </div>
+          <div class="flex flex-row">
+            <div>
+              <h1 class="hero-heading w-full md:w-3/4">
+                Helping you choose the Right Vehicle
+              </h1>
+              <span class="hero-span">
+                Your Free VIN Check is just a click away!
+              </span>
+              <!-- <Formik
+              initialValues="{initialValues}"
+              validationSchema="{validationSchema}"
+              onSubmit="{onSubmit}"
+            > -->
+              <form class="hidden md:block w-1/3 flex flex-col items-start">
+                <div class="flex flex-row gap-2 my-4 w-full">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-email"
+                    placeholder="Email"
+                  />
+                  <!-- <ErrorMessage
+                    name="email"
+                    component="div"
+                    class="text-red-500"
+                  /> -->
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    class="form-field text-gray-400 focus:text-gray-950 pl-3 focus:border-2 focus:border-cyan-500"
+                    placeholder="Phone"
+                  />
+                  <!-- <ErrorMessage
+                  name="phone"
+                  component="div"
+                  class="text-red-500"
+                /> -->
+                </div>
+                <div class="flex flex-row gap-2 mb-4 w-full">
+                  <input
+                    type="text"
+                    id="vin"
+                    name="cin"
+                    class="form-field text-gray-400 focus:text-gray-950 pl-3 focus:border-2 focus:border-cyan-500"
+                    placeholder="VIN"
+                  />
+                  <!-- <ErrorMessage name="vin" component="div" class="text-red-500" /> -->
+
+                  <select
+                    id="package"
+                    name="package"
+                    class="form-field text-gray-400 focus:text-gray-950 pl-1 focus:border-2 focus:border-cyan-500"
+                  >
+                    <option value="" class="text-gray-100">Package</option>
+                    <option value="P1">Package 1</option>
+                    <option value="P2">Package 2</option>
+                    <option value="P3">Package</option>
+                  </select>
+                  <!-- <ErrorMessage
+                  name="package"
+                  component="div"
+                  class="text-red-500"
+                /> -->
+                </div>
+                <button
+                  type="submit"
+                  class="w-lg border border-1 border-gray-950 contact-btn"
+                >
+                  Get your report now
+                </button>
+              </form>
+              <!-- </Formik> -->
+            </div>
+            <div>
+              <!-- <img src="./assets/images/heroBackground.png" alt="" /> -->
+              <img
+                src="./assets/images/heroCar.png"
+                alt="new audi a4l's"
+                class="hidden md:block -mt-20"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Div -->
+    <div class="w-full flex-col items-center pt-10 md:pt-20 px-10">
+      <div class="flex flex-col md:flex-row justify-center md:items-center">
+        <div class="w-full md:w-1/2">
+          <h2 class="report-heading">
+            The most comprehensive vehicle report guaranteed
+          </h2>
+        </div>
+        <div
+          class="hidden md:block w-1/2 linear-g border border-0 md:border-l-2"
+        >
+          <p class="ps-20 report-para">
+            Getting the facts right is the first step to buying a car with
+            confidence that’s why our comprehensive reports are the most
+            advanced Vehicle history records providers, we offer users
+            comprehensive, real-time Federal Govt Title, Total Loss Data & more,
+            at an affordable price.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-around flex-wrap gap-y-2 md:gap-y-2 mt-36 md:mt-16 pl-4 pr-8 py-5 icon-div"
+      >
+        <div
+          class="flex flex-col items-center md:items-start gap-3 ps-0 md:ps-3"
+        >
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportIcon1.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <p class="text-xl">Vehicle Specifications</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start gap-3 ps-0 md:ps-3 linear-g border border-0 md:border-l-2"
+        >
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportIcon2.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <p class="text-xl">Vehicle Valuation</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start gap-3 ps-0 md:ps-3 linear-g border border-0 md:border-l-2"
+        >
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportIcon3.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <p class="text-xl">Vehicle Usage</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start gap-3 ps-0 md:ps-3 linear-g border border-0 md:border-l-2"
+        >
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportIcon4.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <p class="text-xl">Service Records</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start gap-3 ps-0 md:ps-3 linear-g border border-0 md:border-l-2"
+        >
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportIcon5.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <p class="text-xl">Safety Ratings</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Section -->
+    <div
+      class="w-full flex flex-col items-center justify-center gap-0 pt-20 px-4"
+    >
+      <h2 class="text-3xl md:text-5xl report-section-heading">
+        Our Report Checks For
+      </h2>
+      <img
+        src="./assets/images/reportSectionImage.png"
+        alt="car's"
+        class="-mb-8"
+      />
+      <div
+        class="flex flex-row justify-around flex-wrap gap-y-2 md:gap-y-0 mt-4 md:mt-0 w-full"
+      >
+        <div
+          class="w-2/3 md:w-1/4 flex flex-row items-center justify-start md:justify-center gap-4 ps-0"
+        >
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportSectionIcon1.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+            <img
+              src="./assets/images/reportArrow1.png"
+              alt="arrow"
+              class="hidden md:block absolute left-48 -mt-44 w-72"
+            />
+            <img
+              src="./assets/images/reportArrow1.png"
+              alt="arrow"
+              class="hidden md:block absolute left-1/3 ml-10 -mt-44 w-72"
+            />
+          </div>
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+          <p class="text-xl">Technical Data</p>
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+        </div>
+
+        <div
+          class="w-2/3 md:w-1/4 flex flex-row items-center justify-start md:justify-center gap-4 ps-0"
+        >
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportSectionIcon2.png"
+              alt="reportIcon1"
+              class="m-auto"
+            />
+          </div>
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+          <p class="text-xl">Damage Check</p>
+          <!-- <img src="{reportArrow1}" alt="arrow" class="absolute" /> -->
+        </div>
+
+        <div
+          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-around gap-3 md:gap-0 ps-0"
+        >
+          <p class="text-xl">Ownership History</p>
+          <img
+            src="./assets/images/reportArrow2.png"
+            alt="arrow"
+            class="hidden md:block absolute right-48 -mt-52 mb-0 w-80"
+          />
+          <img
+            src="./assets/images/reportArrow2.png"
+            alt="arrow"
+            class="hidden md:block absolute left-1/2 -ml-12 -mt-40 mb-3 w-64"
+          />
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportSectionIcon3.png"
+              alt="reportIcon3"
+              class="m-auto"
+            />
+          </div>
+        </div>
+
+        <div
+          class="w-2/3 md:w-1/4 flex flex-row-reverse md:flex-row items-center justify-end md:justify-around gap-3 md:gap-0 ps-0"
+        >
+          <p class="text-xl">Odometer Check</p>
+          <img
+            src="./assets/images/reportArrow2.png"
+            alt="arrow"
+            class="hidden md:block absolute right-48 -mt-52 mb-0 w-80"
+          />
+          <img
+            src="./assets/images/reportArrow2.png"
+            alt="arrow"
+            class="hidden md:block absolute left-1/2 -ml-12 -mt-40 mb-3 w-64"
+          />
+          <div class="icon-bg">
+            <img
+              src="./assets/images/reportSectionIcon4.png"
+              alt="reportIcon4"
+              class="m-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="w-full flex-col items-center mt-10 pt-20 hero-bg">
+      <h2 class="text-2xl md:text-5xl pricing-heading">
+        Pricing Options For Every Need
+      </h2>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-y-8 md:gap-y-0 py-12"
+      >
+        <div class="pricing-card-secondary z-10 flex flex-col justify-between">
+          <div class="flex flex-row justify-between">
+            <h5 class="card-title text-left">Basic</h5>
+            <!-- <img src={cardTitleIcon} alt="" /> -->
+          </div>
+
+          <div
+            class="flex items-baseline w-full justify-start text-gray-900 dark:text-white mb-4"
+          >
+            <span class="card-pricing">$34.00</span>
+          </div>
+          <ul role="list" class="feature-list">
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>1 vehicle report</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>DMV title history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Safety recall status</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Vehicle specification</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Accident information</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Online listing history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>No expiry</span>
+            </li>
+          </ul>
+          <button type="button" class="pc-btn-secondary text-white">
+            Get your report now
+          </button>
+        </div>
+
+        <div class="pricing-card z-10 flex flex-col justify-between">
+          <div class="flex flex-row justify-between">
+            <h5 class="card-title text-left">Silver</h5>
+            <img src="./assets/images/cardTitleIcon.png" alt="" />
+          </div>
+
+          <div
+            class="flex items-baseline w-full justify-start text-gray-900 dark:text-white mb-4"
+          >
+            <span class="card-pricing">$55.00</span>
+          </div>
+          <ul role="list" class="feature-list">
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>2 vehicle report</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>DMV title history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Safety recall status</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Vehicle specification</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Accident information</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Online listing history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>No expiry</span>
+            </li>
+          </ul>
+          <button type="button" class="pc-btn-secondary text-white">
+            Get your report now
+          </button>
+        </div>
+
+        <div class="pricing-card-secondary z-10 flex flex-col justify-between">
+          <div class="flex flex-row justify-between">
+            <h5 class="card-title text-left">Gold</h5>
+          </div>
+
+          <div
+            class="flex items-baseline w-full justify-start text-gray-900 dark:text-white mb-4"
+          >
+            <span class="card-pricing">$78.00</span>
+          </div>
+          <ul role="list" class="feature-list">
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>3 vehicle report</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>DMV title history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Safety recall status</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Vehicle specification</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Accident information</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>Online listing history</span>
+            </li>
+            <li class="flex flex-row gap-2 text-white">
+              <img src="./assets/images/listItemIcon.png" alt="" class="w-5" />
+              <span>No expiry</span>
+            </li>
+          </ul>
+          <button type="button" class="pc-btn-secondary text-white">
+            Get your report now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="px-4 md:px-24 py-16 w-full flex flex-col gap-20">
+      <div class="flex flex-row gap-64 ps-4 md:ps-16 contact-div">
+        <div class="flex flex-col gap-4 md:gap-6 py-4 md:py-16 w-full md:w-1/2">
+          <h3 class="text-2xl md:text-4xl contact-div-heading">
+            Make an Informed Decision — Check Your VIN Today
+          </h3>
+          <p class="contact-div-para">
+            Don't wait until it's too late. Check your VIN now and drive away
+            with confidence.
+          </p>
+          <button class="border border-1 border-gray-950 contact-div-btn">
+            Check your car
+          </button>
+        </div>
+        <div class="hidden md:block w-0 md:w-1/2 py-0">
+          <img
+            src="./assets/images/contactImage2.png"
+            alt=""
+            class="hidden md:block absolute right-6 mt-12 w-1/3"
+          />
+          <img
+            src="./assets/images/contactImage1.png"
+            alt=""
+            class="hidden md:block h-72 mx-auto mt-20"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-4 md:gap-12 md:gap-40">
+        <div class="flex flex-col gap-4 w-full md:w-1/2">
+          <h3
+            class="text-4xl md:text-5xl contact-div-heading-2 w-full md:w-3/4"
+          >
+            Get in Touch — We're Here to Help
+          </h3>
+          <p class="hidden md:block contact-div-para-2">
+            Have a question about our VIN check services? Need assistance with a
+            report or looking for more information? Our friendly and
+            knowledgeable customer support team is ready to help.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <form class="w-full flex flex-col items-start px-0 md:px-10">
+            <div class="flex flex-row flex-wrap gap-y-5 gap-x-10 my-4 w-full">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="focus:outline-gray-950 w-full md:w-1/2 name-form-field"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="focus:outline-gray-950 w-full md:w-5/12 email-form-field"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-4 w-full">
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                class="focus:outline-gray-950 w-full contact-form-field"
+                placeholder="Contact"
+              />
+            </div>
+            <div class="mb-4 w-full">
+              <input
+                type="textarea"
+                id="message"
+                name="message"
+                class="focus:outline-gray-950 w-full message-form-field"
+                placeholder="Message"
+              />
+            </div>
+            <button
+              type="submit"
+              class="text-white mx-auto md:mx-0 contact-form-sbmtbtn"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="p-3">
+      <div class="w-full rounded-3xl py-5 mb-2 px-9 hero-bg">
+        <div class="w-full flex flex-col">
+          <div class="flex flex-row flex-wrap gap-y-4">
+            <div class="w-full md:w-1/2">
+              <a
+                href="https://flowbite.com/"
+                class="flex items-center space-x-3 rtl:space-x-reverse"
+              >
+                <img
+                  src="./assets/images/navbarLogo.png"
+                  class="h-8"
+                  alt="VDS logo"
+                />
+                <span
+                  class="self-center text-xl text-white whitespace-wrap w-32"
+                >
+                  Vehicle Digital Services
+                </span>
+              </a>
+            </div>
+            <div class="w-1/2 flex flex-col gap-2">
+              <h4 class="text-white text-2xl">Contact Us</h4>
+              <div class="flex flex-row gap-x-4">
+                <img src="./assets/images/footer1.png" alt="" />
+                <span class="text-white">
+                  info@vehicledigitalservices.com
+                </span>
+              </div>
+              <div class="flex flex-row gap-4">
+                <img src="./assets/images/footer2.png" alt="" class="w-6 h-6" />
+                <span class="text-white">(209) 555-0104</span>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <p class="hidden md:block footer-para mb-8">
+            Empower your vehicle purchase with our comprehensive VIN check
+            service. Uncover the truth, make informed decisions, and drive away
+            with peace of mind.
+          </p>
+          <div class="flex flex-row flex-wrap justify-between">
+            <button
+              class="hidden md:block border border-1 border-gray-950 contact-div-btn"
+            >
+              Check your car
+            </button>
+            <div
+              class="flex flex-col justify-center items-center md:items-end gap-y-1 mt-4 md:mt-0"
+            >
+              <div class="flex flex-row justify-end gap-0 mx-0 px-0">
+                <img src="./assets/images/footer3.png" alt="" />
+                <img src="./assets/images/footer4.png" alt="" />
+                <img src="./assets/images/footer5.png" alt="" />
+                <img src="./assets/images/footer6.png" alt="" />
+                <img src="./assets/images/footer7.png" alt="" />
+              </div>
+              <div class="flex flex-row gap-0 md:gap-4">
+                <span class="text-white text-sm">Privacy Policy</span>
+                <span class="text-white text-sm">Terms and Conditions</span>
+                <span class="text-white text-sm">
+                  Copyright 2024 Global Inspection Hub
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- "pricing-card z-10 flex flex-col justify-between" -->
