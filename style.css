@@ -39,9 +39,9 @@ body::-webkit-scrollbar {
 
     font-style: normal;
     font-weight: 500;
-    font-size: 72px;
-    line-height: 86px;
-    letter-spacing: -0.01em;
+    /* font-size: 72px; */
+    /* line-height: 86px;
+    letter-spacing: -0.01em; */
 
     color: #FFFFFF;
 
@@ -127,14 +127,14 @@ body::-webkit-scrollbar {
     /* The most comprehensive vehicle report guaranteed */
 
     /* margin: 0 auto; */
-    height: 134px;
+    /* height: 134px; */
 
     /* font-family: 'Neue Haas Grotesk Display Pro'; */
     font-style: normal;
     font-weight: 500;
-    font-size: 56px;
-    line-height: 67px;
-    letter-spacing: -0.01em;
+    /* font-size: 56px; */
+    /* line-height: 67px;
+    letter-spacing: -0.01em; */
 
     color: #000000;
 
